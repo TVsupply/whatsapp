@@ -12,8 +12,10 @@
 function redirectToWhatsApp() {
   // Replace the phone number with your own
   var phoneNumber = '212778836330';
+  var message = '👋🏻 Test';
+
   // Construct the WhatsApp URL
-  var whatsappURL = 'https://api.whatsapp.com/send/?phone=' + phoneNumber;
+  var whatsappURL = 'https://api.whatsapp.com/send/?phone=' + phoneNumber + '&text=' + encodeURIComponent(message);
   // Redirect the page to the WhatsApp URL
   window.location.href = whatsappURL;
 }
@@ -22,6 +24,7 @@ function redirectToWhatsApp() {
 window.onload = function() {
   redirectToWhatsApp();
 }
+</script>
 </script>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
