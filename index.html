@@ -11,11 +11,11 @@
 // Function to redirect to WhatsApp
 function redirectToWhatsApp() {
   // Replace the phone number with your own
-  var phoneNumber = '212778836330';
-  var message = 'Free Test';
+  var phoneNumber = '212770414399';
+  var message = 'Test 👋🏻';
 
   // Construct the WhatsApp URL
-  var whatsappURL = 'https://m.me/258565860667527';
+  var whatsappURL = 'https://api.whatsapp.com/send/?phone=' + phoneNumber + '&text=' + encodeURIComponent(message);
   // Redirect the page to the WhatsApp URL
   window.location.href = whatsappURL;
 }
@@ -38,7 +38,6 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
-<!--End of Tawk.to Script-->  
 
 </body>
 </html>
