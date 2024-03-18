@@ -15,7 +15,7 @@ function redirectToWhatsApp() {
   var message = 'Test 👋🏻';
 
   // Construct the WhatsApp URL
-  var whatsappURL = 'https://m.me/258565860667527';
+  var whatsappURL = 'https://wa.me/' + phoneNumber + '&text=' + encodeURIComponent(message);
   // Redirect the page to the WhatsApp URL
   window.location.href = whatsappURL;
 }
